@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Subnet Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>Subnet Calculator</h1>
+
+<label>IP Address</label>
+<input id="ip" placeholder="192.168.1.10">
+
+<label>CIDR</label>
+<input id="cidr" placeholder="24">
+
+<button onclick="calculateSubnet()">Calculate</button>
+
+<div id="results">
+<p><b>Network:</b> <span id="network"></span></p>
+<p><b>Broadcast:</b> <span id="broadcast"></span></p>
+<p><b>First Host:</b> <span id="firstHost"></span></p>
+<p><b>Last Host:</b> <span id="lastHost"></span></p>
+<p><b>Total Hosts:</b> <span id="totalHosts"></span></p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
